@@ -27,5 +27,12 @@ person = {
 }
 
 console.log(person.name,person.age,person.country);
-let {name,age,country} = person 
+let { age } = person 
+console.log(age);
 
+
+let team1 = ['Mario', 'Nicolas', 'Hugo']
+let team2 = ['Paola', 'Cata, Ana']
+let completTeam = ['Diomedes', ...team1, ...team2]
+
+console.log(completTeam);
