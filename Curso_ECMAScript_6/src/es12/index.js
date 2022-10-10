@@ -32,3 +32,17 @@ class anyClass {
 
 
 }
+
+let isTrue = true;
+let isFalse = false;
+console.log(isTrue &&= isFalse);
+console.log(isFalse ||= isFalse);
+
+let isTrue2 = true
+let isFalse2 = false
+console.log(isTrue &&= isFalse2);
+console.log(isFalse2 ||= isFalse2);
+
+let isTrue3 = undefined
+let isFalse3 = false
+console.log(isTrue ??= isFalse3);
