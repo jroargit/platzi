@@ -67,3 +67,9 @@ solution([
   }
   
   
+ 
+function nameOfDog(name) {
+    console.log(name); 
+}; 
+
+nameOfDog("Elmo"); 
