@@ -1,3 +1,4 @@
+// npm i xmlhtttprequest
 const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 const API = 'https://api.escuelajs.co/api/v1'
 
