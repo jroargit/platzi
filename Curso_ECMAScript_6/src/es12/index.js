@@ -46,3 +46,24 @@ console.log(isFalse2 ||= isFalse2);
 let isTrue3 = undefined
 let isFalse3 = false
 console.log(isTrue ??= isFalse3);
+
+solution([
+    {
+      name: "Product 1",
+      price: 1000,
+      stock: 10
+    },
+    {
+      name: "Product 2",
+      price: 2000,
+      stock: 20
+    },
+  ]);
+
+  function solution(array){
+    array.map(item => (item.taxes = item.price*0.19))
+    array.map(item => (item.taxes.unshift(item.pop))) 
+    console.log(array);
+  }
+  
+  
