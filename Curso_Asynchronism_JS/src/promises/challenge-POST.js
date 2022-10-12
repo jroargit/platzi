@@ -23,5 +23,5 @@ const data = {
 };
 
 postData(`${API}/products`, data)
-    .then(response => response.JSON())
-    .then(data => console.log(data))
+    .then(response => response.json())
+    .then(data => console.log(data));
