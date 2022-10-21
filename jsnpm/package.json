@@ -1,0 +1,17 @@
+{
+  "name": "jsnpm",
+  "version": "1.0.0",
+  "description": "Curso de paquetes con node",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "package",
+    "npm"
+  ],
+  "author": "Juan José Roa Ruiz <jroar26.git@gmail.com>",
+  "license": "MIT"
+}
