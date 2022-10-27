@@ -1,0 +1,17 @@
+/* Global configuration */
+:root{
+    --veryLightGreen: #C7C7C7;
+    --textImputField: #F7F7F7;
+    --hospitalGreeb: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0%;
+    background-color: var(--white);
+}
