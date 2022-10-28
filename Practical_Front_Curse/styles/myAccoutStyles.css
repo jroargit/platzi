@@ -10,7 +10,7 @@
     --md: 16px;
     --lg: 18px;
 }
-body {
+body{
     font-family: 'Quicksand', sans-serif;
     margin: 0%;
     background-color: var(--white);
@@ -23,15 +23,43 @@ body {
 }
 .formContainer{
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 2fr auto;
+    margin-bottom: -300px;
+    align-content: left;
+
 }
-.logo{
-    width: 200px;
-    height: 250%;
-    margin-bottom: 35px;
-    justify-self: center;
-    display: none;
+.title{
+    text-align: left;
+    font-size: var(--lg);
+    height: 100px;
 }
 .form{
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.input{
+    background-color: var(--textImputField);
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 20px;
+}
+.editButton{
+    font-size: var(--md);
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--hospitalGreeb);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+    padding: 15px;
 }
