@@ -1,0 +1,76 @@
+/* Global configuration */
+:root{
+    --veryLightGreen: #C7C7C7;
+    --textImputField: #F7F7F7;
+    --hospitalGreeb: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0%;
+    background-color: var(--white);
+}
+.myAccount{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -300px;
+
+}
+.title{
+    text-align: left;
+    font-size: var(--lg);
+    height: 100px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.value{
+    font-size: var(--md);
+    color: var(--veryLightGreen);
+    margin: 8px 0 32px 0;
+}
+.form div{
+    display: flex;
+    flex-direction: column;
+}
+.editButton{
+    font-size: var(--md);
+    color: var(--hospitalGreeb);
+    font-weight: bold;
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    border: 1px solid;
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+}
+
+@media (max-width: 640px){
+    .formContainer{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .form{
+        height: 100%;
+        justify-content: space-between;
+    }
+}
