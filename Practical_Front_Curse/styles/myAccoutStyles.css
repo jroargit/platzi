@@ -22,10 +22,8 @@ body{
     place-items: center;
 }
 .formContainer{
-    display: grid;
-    grid-template-rows: auto 2fr auto;
+    display: flex;
     margin-bottom: -300px;
-    align-content: left;
 
 }
 .title{
