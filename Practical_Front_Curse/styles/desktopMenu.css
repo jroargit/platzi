@@ -15,3 +15,35 @@ body {
     margin: 0%;
     background-color: var(--white);
 }
+.desktopMenu{
+    width: 150px;
+    height: auto;
+    border: 1px solid var(--veryLightGreen);
+    border-radius: 8px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+
+}
+.menu a{
+    text-decoration: none;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.title{
+    font-size: var(--md);
+    color: var(--black);
+    font-weight: bold;
+}
+.menu hr{
+    color: #000000;
+}
+.signOut{
+    color: var(--hospitalGreeb);
+    font-size: var(--md);
+    border-top: 1px solid;
+}
