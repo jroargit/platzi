@@ -1,5 +1,5 @@
 /* Global configuration */
-:root{
+:root {
     --veryLightGreen: #C7C7C7;
     --textImputField: #F7F7F7;
     --hospitalGreeb: #ACD9B2;
@@ -10,16 +10,60 @@
     --md: 16px;
     --lg: 18px;
 }
-body{
+body {
     font-family: 'Quicksand', sans-serif;
     margin: 0%;
     background-color: var(--white);
 }
-.cardsContainer{
+.cardsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
+    gap: 25px;
+    place-content: center;
 }
-.productCard{
-    width: 240px;
+.productCard {
+    width: 240px;    
+}
+.productCard img {
+    width: 240px; 
+    height: 240px;
+    border-radius: 10px;
+    object-fit: cover;   
+}
+.productInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price {
+    font-size: var(--md);
+    font-weight: bold;
+    margin: 0;
+}
+.description{
+    font-size: var(--sm);
+    color: var(--veryLightGreen);
+    margin: 0;
+}
+.productInfo figure {
+    margin: 0;
+}
+.productInfo figure img {
+    width: 35px; 
+    height: 35px;
+}
+
+@media (max-width: 640px) {
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+    .productCard {
+        width: 2140px;    
+    }
+    .productCard img {
+        width: 140px; 
+        height: 140px;
+    }
     
 }
