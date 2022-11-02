@@ -62,26 +62,3 @@ body {
 .description p:nth-child(2) {
     text-align: right;
 }
-.shop {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    gap: 16px;
-    margin-bottom: 25px;
-    align-items: center;
-}
-.shop figure {
-    margin: 0;
-}
-.shop figure img {
-    width: 80px;
-    height: 80px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-.shop p:nth-child(2) {
-    color: var(--veryLightGreen);
-}
-.shop p:nth-child(3) {
-    font-size: var(--md);
-    font-weight: bold;
-}
