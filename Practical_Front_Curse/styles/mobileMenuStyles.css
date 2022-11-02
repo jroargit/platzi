@@ -14,7 +14,8 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0%;
     background-color: var(--white);
-}.mobileMenu {
+}
+.mobileMenu {
     width: 250px;
     height: auto;
     border: 1px solid var(--veryLightGreen);
