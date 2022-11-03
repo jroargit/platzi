@@ -17,7 +17,8 @@ body {
 }
 nav {
     display: flex;
-    justify-content: column;
+    justify-content: space-between;
+    height: 100%;
 }
 .menu {
     display: none;
@@ -27,14 +28,49 @@ nav {
 }
 .navBarLeft {
     display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.navBarLeft ul, .navBarRight ul {
+    margin: 0;
 }
 .navBarLeft ul a {
     text-decoration: none;
     color: var(--veryLightGreen);
     padding: 0;
     margin-top: 25px;
+    margin-left: 20px;
+    border: 1px solid var(--white);
+}
+.navBarLeft ul a:hover {
+    border: 1px solid var(--hospitalGreeb);
+    color: var(--hospitalGreeb);
+    border-radius: 10px;
+    padding: 5px;
+
 }
 .navBarRight {
     display: flex;
     align-items: center;
+    margin-right: 30px;
+}
+.navBarRight ul span {
+    font-size: var(--sm);
+    color: var(--veryLightGreen);
+    margin-right: 15px;
+}
+.navBarRight ul div {
+    width: 18px;
+    height: 18px;
+    background-color: var(--hospitalGreeb);
+    border-radius: 50%;
+    font-size: var(--sm);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 18px;
+}
+.shoppingCart {
+    position: relative;
 }
