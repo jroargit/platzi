@@ -36,12 +36,10 @@ body {
     border-radius: 50px;
     padding: 1px;
     align-items: center;
-    justify-content: center;
 }
 .logo {
     width: 100%;
-
-}
+    }
 .closeLogo:hover {
     cursor: pointer;
 }
