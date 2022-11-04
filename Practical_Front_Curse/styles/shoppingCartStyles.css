@@ -26,9 +26,22 @@ body {
     grid-template-rows: auto 1fr auto;
     width: 300px;
 }
+.logoTitle {
+    display: flex;
+    margin-bottom: 30px;
+}
+.mobileMenu {
+    display: none;
+}
+.logoTitle :nth-child(2):hover {
+    cursor: pointer;
+}
+.logoTitle :nth-child(2) {
+    transform:rotate(180deg);
+}
 .title {
     font-size: var(--lg);
-    margin-bottom: 50px;
+    margin: 0 0 0 20px;
 }
 .myOrderContent {
     display: flex;
@@ -85,3 +98,29 @@ body {
     font-size: var(--md);
     font-weight: bold;
 }
+.primaryButton {
+    font-size: var(--md);
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--hospitalGreeb);
+    border: none;
+    border-radius: 10px;
+    padding: 15px; 
+    margin-bottom: 20px;
+}
+.close:hover {
+    cursor: pointer;
+}
+
+@media (max-width:640px) {
+    .mobileMenu {
+        display: block;
+    }
+    .logoTitle :nth-child(2) {
+        display: none;
+    }
+    .title {
+        margin-left: 80px;
+    }
+}
+
