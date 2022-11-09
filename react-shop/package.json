@@ -13,5 +13,9 @@
     "css"
   ],
   "author": "Juan Roa <jroar26@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
