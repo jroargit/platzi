@@ -2,12 +2,21 @@ import React from 'react';
 import '../styles/global.scss';
 import Layout from '../containers/Layout';
 import Login from '../containers/login';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import RecoveryPassword from '../containers/RecoveryPassword';
 
 const App = () => {
     return (
-        <Layout>
-            <Login/>
-        </Layout>
+        <BrowserRouter>
+            <Switch>
+                <Layout>
+                    <Route exact path='/' component={Home}/>
+                    <Route exact path='login' component={Login}/>
+                    <Route exact path='/recovery-password' component={RecoveryPassword}/>
+                    <Route component={NotFound}/>
+                </Layout>
+            </Switch> 
+        </BrowserRouter>
     );
 }
 
