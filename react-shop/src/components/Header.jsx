@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/header.scss"
 
-const header = () => {
+const Header = () => {
     return (
         <nav>
             <img src="./icons/icon_menu.svg" alt="menu" class="menu"/>
@@ -43,3 +43,5 @@ const header = () => {
         </nav>
     );
 }
+
+export default Header;
