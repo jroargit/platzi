@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/global.scss';
 import Layout from '../containers/Layout';
-import Login from '../containers/login';
+import Login from '../pages/login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import RecoveryPassword from '../containers/RecoveryPassword';
+import RecoveryPassword from '../pages/RecoveryPassword';
 import NotFound from '../pages/NotFound';
 import Home from '../pages/Home';
 
