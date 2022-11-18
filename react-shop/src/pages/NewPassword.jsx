@@ -1,22 +1,23 @@
 import React from "react";
+import "../styles/NewPassword.scss"
 
 const NewPassword = () => {
     return (
-        <div class="login">
-            <div class="form-container">
-                <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo"/>
+        <div className="login">
+            <div className="form-container">
+                <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo"/>
 
-                <h1 class="title">Create a new password</h1>
-                <p class="subtitle">Enter a new passwrd for yue account</p>
+                <h1 className="title">Create a new password</h1>
+                <p className="subtitle">Enter a new passwrd for your account</p>
 
-                <form action="/" class="form">
-                    <label for="password" class="label">Password</label>
-                    <input type="password" id="password" placeholder="*********" class="input input-password"/>
+                <form action="/" className="form">
+                    <label for="password" className="label">Password</label>
+                    <input type="password" id="password" placeholder="*********" className="input input-password"/>
 
-                    <label for="new-password" class="label">Password</label>
-                    <input type="password" id="new-password" placeholder="*********" class="input input-password"/>
+                    <label for="new-password" className="label">Password</label>
+                    <input type="password" id="new-password" placeholder="*********" className="input input-password"/>
 
-                    <input type="submit" value="Confirm" class="primary-button login-button"/>
+                    <input type="submit" value="Confirm" className="primary-button login-button"/>
                 </form>
             </div>
         </div>        
