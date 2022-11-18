@@ -18,9 +18,9 @@ const Login = () => {
                     <a href="/">Forgot my password</a>
                 </form>
 
-                                <button className="secondary-button signup-button">Sign up</button>
-                </div>
+                <button className="secondary-button signup-button">Sign up</button>
             </div>
+        </div>
     )
 };
 
