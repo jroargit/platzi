@@ -3,6 +3,7 @@ import ProductItem from 'Components/ProductItem';
 import 'Styles/productList.scss';
 
 const ProductList = () => {
+	
 	return (
 		<section className="main-container">
 			<div className="ProductList">
