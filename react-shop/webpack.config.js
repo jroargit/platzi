@@ -21,6 +21,7 @@ module.exports = {
 			Pages: path.resolve(__dirname, 'src/pages/'),
 			Routes: path.resolve(__dirname, 'src/routes/'),
 			Styles: path.resolve(__dirname, 'src/styles/'),
+			Hooks: path.resolve(__dirname, 'src/hooks/'),
 		},
 	},
 	module: {
