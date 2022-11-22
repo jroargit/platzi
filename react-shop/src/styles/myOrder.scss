@@ -5,6 +5,11 @@
     height: 100vh;
     display: grid;
     place-items: center;
+    background-color: white;
+    top: 60px;
+    bottom: 0;
+    border-radius: 8px;
+    border: 1px solid --very-light-pink;
 }
 
 .title {
