@@ -12,11 +12,11 @@ module.exports = {
 	},
 	mode: 'development',
 	resolve: {
-		extensions: ['.js', '.jsx'],
+		extensions: ['.js', '.jsx', '.scss'],
 		alias: {
-			Component: path.resolve(__dirname, 'src/components/'),
+			Components: path.resolve(__dirname, 'src/components/'),
 			Containers: path.resolve(__dirname, 'src/containers/'),
-			Cons: path.resolve(__dirname, 'src/icons/'),
+			Icons: path.resolve(__dirname, 'src/icons/'),
 			Logos: path.resolve(__dirname, 'src/logos/'),
 			Pages: path.resolve(__dirname, 'src/pages/'),
 			Routes: path.resolve(__dirname, 'src/routes/'),
@@ -30,7 +30,7 @@ module.exports = {
 				exclude: /node_modules/,
 				use: {
 					loader: 'babel-loader'
-				}
+				},
 			},
 			{
 				test: /\.html$/,
@@ -62,7 +62,7 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: '[name].css'
 		}),
-	],
+		],
 	devServer: {
 		historyApiFallback: true,
 	}, 
