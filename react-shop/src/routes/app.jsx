@@ -1,17 +1,17 @@
 import React from 'react';
-import '../styles/global.scss';
-import Layout from '../containers/Layout';
-import Login from '../pages/login';
+import 'Styles/global';
+import Layout from 'Containers/Layout';
+import Login from 'Pages/login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import RecoveryPassword from '../pages/RecoveryPassword';
-import NotFound from '../pages/NotFound';
-import Home from '../pages/Home';
-import SendEmail from '../pages/SendEmail';
-import NewPassword from '../pages/NewPassword';
-import MyAccount from '../pages/MyAccount';
-import CreateAccount from '../pages/CreateAccount';
-import CheckOut from '../pages/CheckOut';
-import Orders from '../pages/Orders';
+import RecoveryPassword from 'Pages/RecoveryPassword';
+import NotFound from 'Pages/NotFound';
+import Home from 'Pages/Home';
+import SendEmail from 'Pages/SendEmail';
+import NewPassword from 'Pages/NewPassword';
+import MyAccount from 'Pages/MyAccount.jsx';
+import CreateAccount from 'Pages/CreateAccount.jsx';
+import CheckOut from 'Pages/CheckOut';
+import Orders from 'Pages/Orders';
 
 const App = () => {
     return (
@@ -26,7 +26,7 @@ const App = () => {
                     <Route path='/my-account' element={<MyAccount/>}/>
                     <Route path='/create-account' element={<CreateAccount/>}/>
                     <Route path='/check-out' element={<CheckOut/>}/>
-                    <Route path='/orders' element={<Orders/>}/>
+                    <Route path='/recovery-password' element={<Orders/>}/>
                     <Route path='/*' element={<NotFound/>}/>
                 </Routes>
             </Layout> 
