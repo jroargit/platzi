@@ -1,11 +1,11 @@
 import React, {useState, useContext} from "react";
-import "Styles/header.scss";
 import MenuDesktop from 'Components/MenuDesktop';
-import AppContext from '../context/AppContext';
+import AppContext from 'Context/AppContext';
 import iconMenu from "Icons/icon_menu.svg";
 import logo from "Logos/logo_yard_sale.svg";
 import shoppingCart from "Icons/icon_shopping_cart.svg";
-import MyOrder from '../containers/MyOrder';
+import MyOrder from 'Containers/MyOrder';
+import styles from 'styles/Header.module.scss';
 
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
     };
 
     return (
-        <nav>
+        <nav className={styles.nav}>
             <img src={iconMenu} alt="menu" className="nav-menu"/>
 
             <div className="navbar-left">
