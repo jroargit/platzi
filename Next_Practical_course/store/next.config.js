@@ -1,6 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-}
-
-module.exports = nextConfig
+  env: {
+    customKey: 'customValue',
+  },
+  basePath: '/dist',
+  compress: true,
+  async redirects() {
+    return [
+      {
+        source: '/hola',
+        destination: 'https://gndx.dev',
+        permanent: true,
+      }
+    ];
+  }
+};
