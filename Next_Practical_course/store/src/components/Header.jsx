@@ -18,29 +18,29 @@ const Header = () => {
 
     return (
         <nav className={styles.nav}>
-            <img src={iconMenu} alt="menu" className="nav-menu"/>
+            <image src={iconMenu} alt="menu" className="nav-menu"/>
 
             <div className="navbar-left">
-                <img src={logo} alt="logo" className="nav-logo"/>
+                <image src={logo} alt="logo" className="nav-logo"/>
 
                 <ul>
                     <li>
-                        <a href="/">All</a>
+                        <link href="/">All</link>
                     </li>
                     <li>
-                        <a href="/">Clothes</a>
+                        <link href="/">Clothes</link>
                     </li>
                     <li>
-                        <a href="/">Electronics</a>
+                        <link href="/">Electronics</link>
                     </li>
                     <li>
-                        <a href="/">Furnitures</a>
+                        <link href="/">Furnitures</link>
                     </li>
                     <li>
-                        <a href="/">Toys</a>
+                        <link href="/">Toys</link>
                     </li>
                     <li>
-                        <a href="/">Others</a>
+                        <link href="/">Others</link>
                     </li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@ const Header = () => {
                 <ul>
                     <li className="navbar-email" onClick={handleToggle}>platzi@example.com</li>
                     <li className="navbar-shopping-cart" onClick={() => setToggleOrders(!toggleOrders)}>
-                        <img src={shoppingCart} alt="shopping cart"/>
+                        <image src={shoppingCart} alt="shopping cart"/>
                         <div>{state.cart.length > 0 ? <div> {state.cart.length} </div> : null }</div>
                     </li>
                 </ul>
