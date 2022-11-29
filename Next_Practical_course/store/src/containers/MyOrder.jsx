@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import OrderItem from 'Components/OrderItems';
-import AppContext from '../context/AppContext';
+import AppContext from 'Context/AppContext';
 import arrow from 'Icons/flechita.svg';
-import styles from 'styles/MyOrder.module.scss';
+import styles from 'styles/myOrder.module.scss';
 
 const MyOrder = () => {
 	const { state } = useContext(AppContext);
 
 	const sumTotal = () => {
-		const reducer = (acumulator, currentValue) => acumulator + currentValue.price
+		const reducer = (acumulator, currentValue) => acumulator + currentValue.price;
 		const sum = state.cart.reduce(reducer, 0);
 		return sum;
 	};
@@ -16,7 +16,7 @@ const MyOrder = () => {
 	return (
 		<aside className={styles.MyOrder}>
 			<div className="title-container">
-				<img src={arrow} alt="arrow" />
+				<image src={arrow} alt="arrow" />
 				<p className="title">My order</p>
 			</div>
 			<div className="my-order-content">

@@ -5,7 +5,7 @@ import iconMenu from "Icons/icon_menu.svg";
 import logo from "Logos/logo_yard_sale.svg";
 import shoppingCart from "Icons/icon_shopping_cart.svg";
 import MyOrder from 'Containers/MyOrder';
-import styles from 'styles/Header.module.scss';
+import styles from 'Styles/header.module.scss';
 
 
 const Header = () => {

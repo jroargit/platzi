@@ -6,15 +6,15 @@ const MenuDesktop = () => {
         <div className={styles.desktopMenu}>
             <ul>
                 <li>
-                    <a href="/" className="title">My orders</a>
+                    <link href="/" className="title">My orders</link>
                 </li>
 
                 <li>
-                    <a href="/">My account</a>
+                    <link href="/">My account</link>
                 </li>
 
                 <li>
-                    <a href="/">Sign out</a>
+                    <link href="/">Sign out</link>
                 </li>
             </ul>
         </div>
