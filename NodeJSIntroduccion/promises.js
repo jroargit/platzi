@@ -19,10 +19,10 @@ function hablar(nombre){
     return new Promise((resolve, reject) => {
         setTimeout(function () {
             console.log(`${nombre} dice: Me gusta jugar pokemon`);
-            resolve(nombres);
+            resolve(nombre);
             reject('Fallo en la matrix');
         }, 3000);
-    })
+    });
 }
 
 //...
