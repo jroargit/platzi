@@ -14,5 +14,11 @@ module.exports = {
     ],
     rules: {
         'semi': ['error', 'always'],
+        
     },
+    sassOptions: {
+        includePaths: [path.resolve(__dirname, 'sass',)],
+        prependData: `@use "_vars.scss";`,
+    },
+
 };

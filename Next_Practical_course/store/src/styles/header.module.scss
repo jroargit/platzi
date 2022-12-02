@@ -1,10 +1,10 @@
 @use 'vars';
 
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     padding: 0 24px;
-    border-bottom: 1px solid $--very-light-pink;
+    border-bottom: 1px solid $very-light-pink;
 }
 
 .nav-menu {
@@ -37,15 +37,15 @@ nav {
 .navbar-right ul li a {
     text-decoration: none;
     color: $--very-light-pink;
-    border: 1px solid $--white;
+    border: 1px solid $--very-light-pink;
     padding: 8px;
     border-radius: 8px;
 }
 
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
-    border: 1px solid $--hospital-green;
-    color: $--hospital-green;
+    border: 1px solid $--very-light-pink;
+    color: $--very-light-pink;
 }
 
 .navbar-email {
