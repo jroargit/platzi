@@ -14,3 +14,8 @@ console.error(Object);
 
 // Print info in a table
 console.table(Object);
+
+// Print and gruop in identation 
+console.group();
+//End console.gruop()
+console.groupEnd();
