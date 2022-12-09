@@ -1,4 +1,6 @@
 const EXPRESS = require('express');
+const faker = require('faker');
+const Faker = require('faker/lib');
 const APP = EXPRESS();
 const PORT = 3000;
 
@@ -27,24 +29,36 @@ const list = [
 
 APP.get('/', (req, res) => {
     res.send('<h1>Hello World!!!!</h1>');
-})
+});
 
 APP.get('/products', (req, res) => {
-    res.json(list);
-})
+    const products = [];
+
+    for (let index = 0; index < 100; index++) {
+        products.push(
+            {
+                name: faker.commerce.productName(),
+                price: +faker.commerce.price(),
+                image: faker.image.imageUrl(),
+            }
+        );
+        
+    }
+    res.json(products);
+});
 
 APP.get('/products/:id', (req, res) => {
     const { id } = req.params
     res.json(
         {
-        id: id,
+        id,
         name: "Mouse",
         price: "$150",
         }
     );
-})
+});
 
-APP.get('/categories:categorieId/product:productId', (req, res) => {
+APP.get('/categories/:categorieId/product/:productId', (req, res) => {
     const { categorieId, productId } = req.params;
     res.json(
         {
@@ -52,8 +66,23 @@ APP.get('/categories:categorieId/product:productId', (req, res) => {
             productId: productId
         }
     );
-})
+});
+
+APP.get('/users', (req, res) => {
+    const { limit, offset } = req.query;
+
+    if ( limit && offset ){
+        res.json(
+            {
+                limit,
+                offset
+            }
+        ); 
+    } else {
+        res.send("UPS, something gone wrong");
+    }
+});
 
 APP.listen(PORT, () => {
     console.log(`My port is ${PORT} `);
-})
+});
