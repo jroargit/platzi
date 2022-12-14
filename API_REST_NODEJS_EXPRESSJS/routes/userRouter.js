@@ -2,7 +2,7 @@ const EXPRESS = require('express');
 const router = EXPRESS.Router();
 
 // localhost:3000/users?limit=10&offset=50
-router.get('/users', (req, res) => {
+router.get('/', (req, res) => {
     const { limit, offset } = req.query;
 
     if ( limit && offset ){
