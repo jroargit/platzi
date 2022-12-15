@@ -5,6 +5,8 @@ const APP = EXPRESS();
 const routerApi = require('./routes');
 const PORT = 3000;
 
+APP.use(EXPRESS.json());
+
 // const list = [
 //     {
 //     name: "Computer",
