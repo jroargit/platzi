@@ -20,11 +20,9 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
     const data = req.body;
-    productServices.create(data);
+    const newProduct = productServices.create(data);
 
-    res.status(201).json({
-        message : "Product created" 
-    })
+    res.status(201).json(newProduct);
 });
 
 router.patch('/:id', (req, res) => {
