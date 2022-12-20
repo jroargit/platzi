@@ -11,30 +11,19 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    const { id } = req.params
-    if (+id === 999){
-        res.status(404).json({
-            message: "Error. Not Found. 404",
-            
-        })
-    }else {
-        res.status(201).json(
-            {
-            id,
-            name: "Mouse",
-            price: "$150",
-            message : "Status code 201"
-            }
-        );
-    }
+    const { id } = req.params;
+    const product = productServices.findBy(id);
+
+    res.status(203).json(product)
+    
 });
 
 router.post('/', (req, res) => {
     const data = req.body;
+    productServices.create(data);
 
-    res.status(200).json({
-        data,
-        message : "Status code 200" 
+    res.status(201).json({
+        message : "Product created" 
     })
 });
 
