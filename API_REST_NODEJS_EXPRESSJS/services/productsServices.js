@@ -36,15 +36,35 @@ class ProductsServices {
     }
 
     findBy (id) {
-        return this.products.find(item => item.id === id);
+        const index = this.products.findIndex(item => item.id === id);
+        if (index === -1) {
+            throw new Error('Product not found');
+        }
+        return this.products[index];
     }
 
-    update () {
+    update (id, changes) {
+        const index = this.products.findIndex(item => item.id === id);
+        const newChanges = {
+            id,
+            ...changes
+        }
 
+        if (index === -1) {
+            throw new Error('Product not found');
+        }
+        this.products[index] = newChanges;
+        return this.products[index];
     }
 
-    delete () {
+    delete (id) {
+        const index = this.products.findIndex(item => item.id === id);
 
+        if (index === -1) {
+            throw new Error('Product not found');
+        }
+        this.products.splice(index, 1);
+        return {message: `${id} element delete`};
     }
 }
 
